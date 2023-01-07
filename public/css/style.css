@@ -1,0 +1,220 @@
+*{
+    font-family: CordiaUPC;
+    box-sizing: border-box;
+
+}
+
+
+header nav{
+    background-color: #4CAF50; /* Green */
+    color: white;
+    display: flex;
+    align-items: center;
+    height: 40px;
+}
+header nav h1{
+    margin-left: 25px;
+}
+.container{
+    border: 1px solid #ddd;
+    /*border: solid red 10px;*/
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    margin-top:40px
+}
+
+.container-header{
+    /*border: solid 4px;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.container-header h1 {
+    max-width: fit-content;
+}
+
+.container-header h1 span{
+    color: #4CAF50;
+    font-weight: bold;
+}
+.container-header button{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 16px;
+    cursor:pointer;
+    border-radius: 4px;
+}
+.container-header button a {
+    color: white;
+    text-decoration: none;
+
+}
+.container-body{
+    /*border: solid 4px;*/
+    display: flex;
+    flex-direction: column;
+}
+.container-body table{
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+.container-body table th , .container-body table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.container-body table tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+.container-body table th{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+}
+
+.container form input[type=text],select{
+    width: 100%;
+    padding: 12px;
+    border: solid #ddd 1px;
+    border-radius: 4px;
+    resize: vertical;
+}
+.container form label{
+    padding: 12px 12px 12px 0px;
+}
+.container form input[type=submit] {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 16px;
+    cursor:pointer;
+    border-radius: 4px;
+    color: white;
+}
+
+.container form input[type=submit]:hover ,.edit-link:hover{
+    background-color: #45a049;
+}
+.container form {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+.row{
+    display: flex;
+    align-items: center;
+}
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+.col-75 {
+     float: left;
+     width: 75%;
+     margin-top: 6px;
+     margin-bottom: 6px;
+ }
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+@media screen and (max-width: 450px) {
+    .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+.success {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    display: inline-block;
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+}
+.edit {
+    color: #856404;
+    background-color:  #fff3cd;
+    border-color: #ffeeba;
+    display: inline-block;
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+}
+.delete {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    display: inline-block;
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+}
+.edit-container{
+    text-align: center;
+}
+.edit-link {
+    text-decoration: none;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 16px;
+    cursor:pointer;
+    border-radius: 4px;
+    text-align: center;
+    background-color: #4CAF50;
+    color: white;
+
+}
+.delete-form{
+    text-align: center;
+}
+.delete-form .delete-link{
+    background: #dc3545 !important;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #4CAF50;
+    border-radius: 10px;
+}
+
+.error-msg{
+    color: red;
+}
+.container-add-task,.container-edit-task{
+    text-align: center;
+    font-size: 18px;
+    padding-bottom: -50px;
+    font-family: "Rockwell Nova Cond Light"!important;
+}
+.container-add-task span,.container-edit-task span{
+    color: #4CAF50;
+}
